@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+    <channel>
+      <title>Digital Garden</title>
+      <link>https://itsdatlog.github.io/garden</link>
+      <description>Last 10 notes on Digital Garden</description>
+      <generator>Quartz -- quartz.jzhao.xyz</generator>
+      <item>
+    <title>Danh sách thẻ</title>
+    <link>https://itsdatlog.github.io/garden/tags/</link>
+    <guid>https://itsdatlog.github.io/garden/tags/</guid>
+    <description><![CDATA[  ]]></description>
+    <pubDate>Tue, 03 Nov 2026 09:09:47 GMT</pubDate>
+  </item><item>
+    <title>Vườn Tri Thức</title>
+    <link>https://itsdatlog.github.io/garden/</link>
+    <guid>https://itsdatlog.github.io/garden/</guid>
+    <description><![CDATA[ Chào mừng bạn đến với Vườn tri thức (Digital Garden). Đây là không gian chia sẻ ghi chú, kiến thức và các tài liệu được xuất bản chọn lọc từ Obsidian. ]]></description>
+    <pubDate>Tue, 03 Nov 2026 08:57:03 GMT</pubDate>
+  </item>
+    </channel>
+  </rss>
