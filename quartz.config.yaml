@@ -112,8 +112,8 @@ plugins:
   - source: "@quartz-themes/core"
     enabled: true
     options:
-      theme: default
-      mode: both
+      theme: catppuccin
+      mode: dark
   - source: "@quartz-community/remove-draft"
     enabled: false
   - source: "@quartz-community/explicit-publish"
