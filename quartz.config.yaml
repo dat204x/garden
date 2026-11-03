@@ -15,30 +15,30 @@ configuration:
     fontOrigin: googleFonts
     cdnCaching: true
     typography:
-      header: Schibsted Grotesk
-      body: Source Sans Pro
-      code: IBM Plex Mono
+      header: Inter
+      body: Inter
+      code: JetBrains Mono
     colors:
       lightMode:
-        light: "#faf8f8"
-        lightgray: "#e5e5e5"
-        gray: "#b8b8b8"
-        darkgray: "#4e4e4e"
-        dark: "#2b2b2b"
-        secondary: "#284b63"
-        tertiary: "#84a59d"
-        highlight: rgba(143, 159, 169, 0.15)
-        textHighlight: "#fff23688"
+        light: "#16242d"
+        lightgray: "#203442"
+        gray: "#58778a"
+        darkgray: "#d6e2ee"
+        dark: "#ffffff"
+        secondary: "#6fb8e3"
+        tertiary: "#8bc9eb"
+        highlight: rgba(111, 184, 227, 0.15)
+        textHighlight: rgba(139, 201, 235, 0.25)
       darkMode:
-        light: "#161618"
-        lightgray: "#393639"
-        gray: "#646464"
-        darkgray: "#d4d4d4"
-        dark: "#ebebec"
-        secondary: "#7b97aa"
-        tertiary: "#84a59d"
-        highlight: rgba(143, 159, 169, 0.15)
-        textHighlight: "#b3aa0288"
+        light: "#16242d"
+        lightgray: "#203442"
+        gray: "#58778a"
+        darkgray: "#d6e2ee"
+        dark: "#ffffff"
+        secondary: "#6fb8e3"
+        tertiary: "#8bc9eb"
+        highlight: rgba(111, 184, 227, 0.15)
+        textHighlight: rgba(139, 201, 235, 0.25)
 plugins:
   - source: "@quartz-community/created-modified-date"
     enabled: true
@@ -147,7 +147,7 @@ plugins:
   - source: "@quartz-community/og-image"
     enabled: true
   - source: "@quartz-community/cname"
-    enabled: true
+    enabled: false
   - source: "@quartz-community/canvas-page"
     enabled: true
   - source: "@quartz-community/content-page"
@@ -229,8 +229,7 @@ plugins:
     enabled: true
     options:
       links:
-        GitHub: https://github.com/jackyzha0/quartz
-        Discord Community: https://discord.gg/cRFFHYye7t
+        GitHub: https://github.com/itsdatlog/garden
     layout:
       position: footer
       priority: 50

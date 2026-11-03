@@ -1,3 +1,154 @@
 @use "./variables.scss" as *;
 
-// put your custom CSS here!
+// Obsidian & Omarchy Styling
+:root, [saved-theme="dark"], [saved-theme="light"] {
+  --font-interface: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-text: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-monospace: "JetBrains Mono", "Fira Code", monospace;
+
+  /* Omarchy Palette */
+  --bg-primary: #16242d;
+  --text-normal: #d6e2ee;
+  --text-muted: #8fa8ba;
+  --border: #304860;
+
+  --h1: #4d86b0;
+  --h2: #5e95bc;
+  --h3: #6fa4c9;
+  --h4: #6fb8e3;
+  --h5: #8bc9eb;
+  --h6: #8bc9eb;
+
+  --link: #6fb8e3;
+  --link-hover: #8bc9eb;
+  --tag-bg: #304860;
+  --tag-color: #b4e4f6;
+  --code-bg: #1c2e3a;
+  --code-color: #b4e4f6;
+}
+
+body {
+  font-family: var(--font-text) !important;
+  background-color: var(--bg-primary) !important;
+  color: var(--text-normal) !important;
+  letter-spacing: -0.01em;
+  -webkit-font-smoothing: antialiased;
+}
+
+article {
+  max-width: 820px;
+  line-height: 1.7;
+  font-size: 1.05rem;
+}
+
+// Headings
+h1, .article-title {
+  color: var(--h1) !important;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+h2 {
+  color: var(--h2) !important;
+  font-weight: 600;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0.3rem;
+  margin-top: 1.8rem;
+}
+
+h3 {
+  color: var(--h3) !important;
+  font-weight: 600;
+}
+
+h4 { color: var(--h4) !important; }
+h5, h6 { color: var(--h5) !important; }
+
+// Links - Obsidian style
+a {
+  color: var(--link);
+  text-decoration: none;
+  transition: color 0.15s ease;
+  &:hover {
+    color: var(--link-hover);
+    text-decoration: underline;
+  }
+}
+
+// Tags - Pill style
+.tag-link, a.tag, .tags a {
+  background-color: var(--tag-bg) !important;
+  color: var(--tag-color) !important;
+  border-radius: 12px;
+  padding: 0.15rem 0.55rem;
+  font-size: 0.82rem;
+  text-decoration: none !important;
+  display: inline-block;
+  margin: 0.1rem;
+  &:hover {
+    background-color: #3b5668 !important;
+  }
+}
+
+// Blockquotes & Callouts
+blockquote {
+  border-left: 3px solid #8bc9eb !important;
+  background: rgba(139, 201, 235, 0.05);
+  border-radius: 0 6px 6px 0;
+  padding: 0.6rem 1rem;
+  margin: 1rem 0;
+  color: var(--text-normal);
+}
+
+.callout {
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: rgba(22, 36, 45, 0.6);
+}
+
+// Inline code & code blocks
+code {
+  font-family: var(--font-monospace) !important;
+  color: var(--code-color) !important;
+  background-color: var(--code-bg) !important;
+  border-radius: 4px;
+  padding: 0.15rem 0.35rem;
+  font-size: 0.9em;
+}
+
+pre > code {
+  padding: 0 !important;
+  background-color: transparent !important;
+}
+
+pre {
+  background-color: var(--code-bg) !important;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+// Sidebar & Explorer
+.sidebar {
+  border-color: var(--border);
+}
+
+.explorer {
+  font-size: 0.92rem;
+}
+
+// Search button
+.search-button {
+  background-color: #203442 !important;
+  border: 1px solid var(--border) !important;
+  border-radius: 6px;
+  color: var(--text-normal) !important;
+}
+
+// Footer
+footer {
+  border-top: 1px solid var(--border);
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  opacity: 0.7;
+}
